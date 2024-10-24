@@ -1,0 +1,727 @@
+body,
+a {
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    letter-spacing: -2%;
+}
+
+.container {
+    max-width: 1720px;
+    margin: auto;
+}
+
+.header {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo {
+    background-image: url(../img/icon/logo.svg);
+    width: 61px;
+    height: 89px;
+    transition: .5s ease;
+    margin-right: 70px;
+}
+
+.logo:hover {
+    background-image: url(../img/icon/logo_hover.svg);
+    width: 71px;
+    height: 89px;
+}
+
+.menu_header ul {
+    display: flex;
+    align-items: center;
+    width: 572px;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+
+.menu_header a {
+    color: #fff;
+}
+
+.social ul {
+    display: flex;
+    align-items: center;
+    width: 70px;
+    justify-content: space-between;
+}
+
+.section_main {
+    background-image: url(../img/bg/bg_first-screen.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.pulse-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    border-radius: 40px;
+    padding: 10px;
+    border: none;
+    background: #D9D9D9;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 430px;
+    left: 620px;
+    cursor: pointer;
+    outline: none;
+    z-index: 1000;
+}
+
+
+.pulse-button__rings {
+    border: 1px solid #D9D9D9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+    animation-duration: 2.0s;
+    animation-name: pulse_1;
+    animation-iteration-count: infinite;
+    z-index: -1;
+}
+
+.pulse-button__rings:nth-child(2) {
+    animation-name: pulse_2;
+}
+
+.pulse-button__rings:nth-child(3) {
+    animation-name: pulse_3;
+}
+
+@keyframes pulse_1 {
+    from {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1.4, 1.4);
+    }
+}
+
+@keyframes pulse_2 {
+    from {
+        opacity: 1;
+        transform: scale(0.9, 0.9);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1.8, 1.8);
+    }
+}
+
+@keyframes pulse_3 {
+    from {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(2, 2);
+    }
+}
+
+.info_pulse {
+    padding-top: 680px;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+}
+
+.info_pulse--open {
+    transform: translateX(0%);
+}
+
+.info_pulse .info_brend {
+    display: flex;
+    align-items: center;
+}
+
+.info_pulse h1 {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 170px;
+    color: #fff;
+    margin-left: 169px;
+}
+
+.info_pulse p {
+    font-family: "Red Hat Display", sans-serif;
+    transform: rotate(270deg);
+    transform-origin: center center;
+    margin-left: -10px;
+    font-size: 30px;
+    color: #fff;
+}
+
+.info_pulse .line {
+    border-bottom: 1px solid #fff;
+    width: 663px;
+    margin-top: -28px;
+    margin-bottom: -5px;
+}
+
+.info_pulse a {
+    font-size: 35px;
+    color: #fff;
+    margin-left: 390px;
+    font-weight: 300;
+}
+
+.section_main .main_screen {
+    display: flex;
+}
+
+.main_screen .main_info {
+    margin-left: 340px;
+    margin-top: 392px;
+    color: #fff;
+}
+
+.main_screen .main_info h1 {
+    font-family: "Noto Sans", sans-serif;
+    color: #45574B;
+    text-transform: uppercase;
+    font-size: 70px;
+}
+
+.main_screen .main_info p {
+    width: 560px;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 14px;
+}
+
+.main_screen .main_info button {
+    font-size: 21px;
+    border: 1px solid #fff;
+    padding: 10px 46px;
+    font-weight: 300;
+    margin-top: 38px;
+    transition: .5s ease;
+}
+
+.main_screen .main_info button:hover {
+    font-weight: 400;
+    background-color: #fff;
+    color: #301E12;
+}
+
+.section_presentation {
+    background-image: url(/img/bg/bg-section_2.jpg);
+    height: 920px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.section_presentation {
+    color: #fff;
+}
+
+.presentation_name {
+    font-family: "Red Hat Display", sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    align-items: baseline;
+    padding-top: 133px;
+}
+
+.presentation_name .brend {
+    font-size: 100px;
+    font-weight: 500;
+}
+
+.presentation_name .stamp {
+    font-size: 65px;
+    font-weight: 400;
+    color: #45574B;
+    border-bottom: 1px solid #45574B;
+}
+
+.presentation_price {
+    margin-top: 7px;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.presentation_info {
+    margin-top: 82px;
+    width: 1200px;
+    border-left: 1px solid #fff;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 16px 0px 23px 16px;
+}
+
+.section_presentation button {
+    margin-top: 76px;
+    text-decoration: underline;
+    font-size: 25px;
+    color: #45574B;
+    font-weight: 300;
+}
+
+.section_presentation .container {
+    display: flex;
+}
+
+.presentation_img {
+    padding-top: 40px;
+}
+
+.section_categories {
+    background-color: #0D0D0D;
+    padding-left: 20px;
+    max-width: 100vw;
+}
+
+
+
+
+
+
+
+
+
+/*catalog*/
+
+.content_catalog {
+    background-color: #1B1B1B;
+}
+
+.content_catalog .title_catalog {
+    font-size: 24px;
+    padding-top: 154px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+
+.content_catalog .cards_catalog {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 37px;
+    padding-bottom: 45px;
+}
+
+.card_catalog {
+    background-color: #343434;
+    width: 412px;
+    border-radius: 15px;
+    padding-top: 34px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.card_catalog img{
+    margin-top: 24px;
+    margin-left: 150px;
+}
+
+
+.card_catalog h1{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+    width: 324px;
+    margin-left: 34px;
+}
+
+.card_catalog h1{
+    margin-top: 10px;
+}
+
+.card_catalog h2{
+    margin-left: 34px;
+    margin-top: 9px;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 300;
+    width: 356px;
+}
+
+.card_catalog .card_bottom{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    gap: 236px;
+    margin-left: 34px;
+    color: #fff;
+    margin-top: 9px;
+    margin-bottom: 47px;
+}
+
+.card_catalog .card_bottom .card_basket{
+    background-image: url(/img/icon/basket_card.svg);
+    width: 23px;
+    height: 23px;
+}
+
+
+
+
+
+
+/*basket*/
+
+.content_basket{
+    background-color: #1B1B1B;
+}
+
+.all_basket{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_basket-products{
+    padding-top: 56px;
+}
+
+.title_basket{
+    font-size: 24px;
+    padding-top: 154px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 37px;
+    padding-top: 154px;
+}
+
+.card_product{
+    display: flex;
+    padding-bottom: 45px;
+}
+
+.card_product .img_basket{
+    background-color: #343434;
+    height: 154px;
+    padding: 12px 128px;
+    border-radius: 15px;
+}
+
+.info_product{
+    margin-left: 34px;
+}
+
+.info_product .title-info_product{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 22px;
+    color: #fff;
+    display: flex;
+    margin-bottom: 7px;
+    width: 324px;
+}
+
+.info_product .shop{
+    text-decoration: underline;
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 20px;
+    color: #BCBCBC;
+}
+
+.prices_basket{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+    margin-left: 190px;
+    text-align: right;
+}
+
+.delivery_basket{
+    margin-top: 11px;
+}
+
+
+.section_basket-order{
+    background-color: #343434;
+    border-radius: 15px;
+    padding: 39px 30px;
+    width: 520px;
+    margin-top: 56px;
+    padding-bottom: 11px;
+    margin-bottom: 102px;
+}
+
+.checkbox{
+    display: none;
+}
+
+.checkbox-open{
+    display: block;
+}
+
+.delivery_text{
+    display: flex;
+    align-items: center;
+    gap: 241px;
+}
+
+.delivery_text p{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.adress, .name, .tel, .email{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 20px;
+    color: #D7D7D7;
+    margin-top: 11px;
+    border-bottom: 1px solid #BCBCBC;
+    width: 461px;
+    margin-bottom: 15px;
+}
+
+.checkbox input{
+    margin-top: 11px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    width: 340px;
+    border-bottom: 1px solid #787878;
+    padding: 6px;
+}
+
+.checkbox button{
+    margin-top: 11px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    border: 1px solid #FF7A00;
+    border-radius: 5px;
+    transition: .5s ease;
+    padding: 5px 20px;
+}
+
+.checkbox button:hover{
+    background-color: #FF7A00;
+}
+
+.all_products{
+    color: #fff;
+    font-size: 20px;
+    font-family: "Red Hat Display", sans-serif;
+    margin-top: 32px;
+}
+
+.price_order{
+    display: flex;
+    align-items: center;
+    gap: 286px;
+    margin-top: 20px;
+}
+
+.price_order h3{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 26px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.price_order p{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 22px;
+    color: #ACC8B5;
+    font-weight: 500;
+}
+
+.payment select{
+    -moz-appearance: none;
+ -webkit-appearance: none;
+ appearance: none;
+ font-size: 22px;
+margin-top: 20px;
+color: #ACC8B5;
+font-weight: 300;
+}
+
+.payment select option{
+    background-color: #343434;
+}
+
+.payment select::-ms-expand { display: none; } 
+
+.payment{
+    display: flex;
+    align-items: center;
+    gap: 180px;
+}
+
+.payment h1{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 14px;
+}
+
+.delivery_order h3{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+.order_products{
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 22px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #45574B;
+    border-radius: 5px;
+    padding: 8px 112px;
+    margin-top: 53px;
+    margin-left: 70px;
+}
+
+.btn_agree{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.btn_agree p{
+    width: 419px;
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+    color: #fff;
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+}
+
+
+
+/* footer */
+
+.footer {
+    background-color: #343434;
+    padding-bottom: 24px;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 96px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 3px;
+}
+
+.footer_info .politics {
+    padding-bottom: 31px;
+}
+
+.footer_info .politics a {
+    font-size: 16px;
+    gap: 2px;
+    color: #BBBBBB;
+    display: block;
+    text-decoration: underline;
+}
+
+.footer_info span {
+    font-size: 16px;
+    color: #BBBBBB;
+    display: block;
+}
+
+.form_footer {
+    display: grid;
+}
+
+.form_footer h1 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.form_footer p {
+    color: #fff;
+    margin-top: 24px;
+    font-weight: 300;
+}
+
+.form_footer input {
+    margin-top: 38px;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    width: 477px;
+    padding-bottom: 12px;
+}
+
+.form_footer button {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 61px;
+    transition: .5s ease;
+    width: 219px;
+    margin-top: 21px;
+}
+
+.form_footer button:hover {
+    border: 1px solid #000;
+    background-color: #000;
+
+}
+
+.nav_footer a {
+    font-weight: 300;
+}
+
+.nav_footer li {
+    margin-bottom: 20px;
+}
+
+.span_footer {
+    font-family: "Inter", sans-serif;
+    margin-left: 753px;
+    font-size: 15px;
+    color: #BBBBBB;
+}

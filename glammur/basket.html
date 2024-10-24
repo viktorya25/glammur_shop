@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Glammur</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_nav">
+            <a href="./index.html" class="logo"></a>
+            <nav class="menu_header">
+                <ul>
+                    <li><a href="#">новинки</a></li>
+                    <li><a href="./catalog.html">каталог</a></li>
+                    <li><a href="#">подборка</a></li>
+                    <li><a href="#">доставка</a></li>
+                    <li><a href="#">контакты</a></li>
+                </ul>
+            </nav>
+            <nav class="social">
+                <ul>
+                    <li><a href="./basket.html"><img src="./img/icon/basket.svg" alt=""></a></li>
+                    <li><a href="#"><img src="./img/icon/heart.svg" alt=""></a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="content_basket">
+        <div class="container">
+            <h1 class="title_basket">Корзина</h1>
+            <section class="all_basket">
+                <section class="section_basket-products">
+                    <div class="card_product">
+                        <img src="./img/content/perfume_4.png" alt="" class="img_basket">
+                        <div class="info_product">
+                            <a href="#" class="title-info_product">Perfume 4 Citrus</a>
+                            <a href="./catalog.html" class="shop">Мужской аромат</a>
+                        </div>
+                        <div class="prices_basket">
+                            <div class="price_basket">3 400 Р</div>
+                        </div>
+                    </div>
+                    <div class="card_product">
+                        <img src="./img/content/perfume_3.png" alt="" class="img_basket">
+                        <div class="info_product">
+                            <a href="#" class="title-info_product">Perfume 3 Cherry</a>
+                            <a href="./catalog.html" class="shop">Женский аромат</a>
+                        </div>
+                        <div class="prices_basket">
+                            <div class="price_basket">4 200 Р</div>
+                        </div>
+                    </div>
+                    <div class="card_product">
+                        <img src="./img/content/perfume_1.png" alt="" class="img_basket">
+                        <div class="info_product">
+                            <a href="#" class="title-info_product">Perfume 1 Coconut</a>
+                            <a href="./catalog.html" class="shop">Мужской аромат</a>
+                        </div>
+                        <div class="prices_basket">
+                            <div class="price_basket">5 000 Р</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section_basket-order">
+                        <div class="delivery_text">
+                            <p>Доставка по адресу:</p>
+                        </div>
+                        <input type="text" name="" id="" placeholder="Оренбург, Чкалова 11" class="adress">
+                        <div class="delivery_text">
+                            <p>Получатель:</p>
+                        </div>
+                        <input type="text" name="" id="" placeholder="Игнатьева Ангелина Валерьевна" class="name">
+                        <div class="delivery_text">
+                            <p>Контактный номер:</p>
+                        </div>
+                        <input type="tel" name="" id="" placeholder="+79877345602" class="tel">
+                        <div class="delivery_text">
+                            <p>E-mail:</p>
+                        </div>
+                        <input type="text" name="" id="" placeholder="valeriya56@gmail.com" class="email">
+                            <div class="all_products">Всего товаров: 3</div>
+                            <div class="prices_order">
+                                <div class="price_order">
+                                    <h3>Итого:</h3>
+                                    <p>12 600 Р</p>
+                                </div>
+                                <div class="payment">
+                                    <h1>Способ оплаты:</h1>
+                                    <select id="" name="">
+                                        <option value="Наличные">наличные</option>
+                                        <option value="Карта">карта</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="order_products">Заказать</button>
+                            <div class="btn_agree">
+                                <input type="checkbox" name="" id="">
+                                <p>Соглашаюсь с правилами пользования торговой площадкой и возвратом</p>
+                            </div>
+    
+                </section>
+            </section>
+        </div>
+    </div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer_info">
+            <a href="./index.html" class="logo-footer">
+                <img src="./img/icon/logo.svg" alt="">
+                <h1>GeekHub</h1>
+            </a>
+            <div class="politics">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Информация об организации</a>
+            </div>
+            <span>ИП Ляпина и Смотриченко</span>
+            <span>ИНН 4567887654</span>
+        </div>
+        <form action="" class="form_footer">
+            <h1>Есть вопросы?</h1>
+            <p>Оставьте свой номер телефона и мы с Вами свяжемся</p>
+            <input type="text" name="" id="" placeholder="+7 (900) 000 00 00">
+            <button type="submit">Отправить</button>
+        </form>
+        <nav class="nav_footer">
+            <ul>
+                <li><a href="#">новинки</a></li>
+                <li><a href="./catalog.html">каталог</a></li>
+                <li><a href="./compilation.html">подборка</a></li>
+                <li><a href="./basket.html">доставка</a></li>
+                <li><a href="#">контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+    <span class="span_footer">2013-2024 Glammur Company A.D. Все права защищены.</span>
+</footer>
+<script src="/js/main.js"></script>
+</body>
+
+</html>
